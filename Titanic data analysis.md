@@ -12,14 +12,9 @@ import numpy as np
 # read Titanic csv file into dataframe
 data = pd.read_csv('titanic_data.csv')
 print ('number of records in original data: ', len(data))
-
-#clean data by selecting records with Age field is a number
-data=data[data.Age > 0]
-print ('number of records in cleaned data: ',len(data))
 ```
 
     number of records in original data:  891
-    number of records in cleaned data:  714
     
 
 
@@ -103,6 +98,15 @@ for i in range(1,4,1):
 
 
 ```python
+#Data cleaning: this section is to get the percentage of survived/dead people in different age groups, 
+#and field 'Age' is one of the key words to group the data. Records missing the value for this important feature will be 
+#dropped off. Replacing the missing value of 'Age' with any other values such as mean, mod would make the result inaccurate.
+
+#clean data by selecting records with value of Age field is greater than 0. 
+data=data[data.Age > 0]
+print ('number of records after removing Age=Non data: ',len(data))
+
+
 #add a column 'Age Group' in data, specifying the age group each record belongs to: 
 #Infants(0-2), Children(3-12), Adolescence(13-18), YoungAdults(19-34), Adults(35-60), Seniors(>61)
 data['Age Group'] = pd.cut(data['Age'],bins=[0,2,12,18,34,60,150],labels='Infants(0-2) Children(3-12) Adolescence(13-18) YoungAdults(19-34) Adults(35-60) Seinors(>61)'.split())
@@ -134,6 +138,7 @@ plt.show()
 
 ```
 
+    number of records after removing Age=Non data:  714
                  Age Group  Pclass  number of survived  number of all  \
     0         Infants(0-2)       1                   1              2   
     1         Infants(0-2)       2                   7              7   
@@ -219,7 +224,7 @@ plt.show()
 
 
 
-    <matplotlib.figure.Figure at 0x230745702e8>
+    <matplotlib.figure.Figure at 0x13e765e9b70>
 
 
 

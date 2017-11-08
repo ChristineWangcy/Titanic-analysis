@@ -3,9 +3,9 @@ A: Yes. The report1 histogram 'Number of survived and dead people in Titanic' sh
 
 Q: Were women given priority to the lifeboat in different classes?
 A: Yes, report2 pie charts showed that women were given priority to the lifeboat in all classes. 
-In the 1st class, around 96% of women survived while 40% of men survived;
-In the 2nd class, around 92% of women survived while 15% of men survived;
-In the 3rd class, around 46% of women survived while 15% of men survived.
+In the 1st class, around 97% of women survived while 37% of men survived;
+In the 2nd class, around 92% of women survived while 16% of men survived;
+In the 3rd class, around 50% of women survived while 14% of men survived.
 
 Q: What's the percentag of survived kids under 18 years old in different classes?
 A: The report3 histogram 'Percentage of survived people in different age groups' showed that:
