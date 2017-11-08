@@ -1,0 +1,16 @@
+Conclusion:
+
+1. The more expensive class people are in, the more chance they have to survive.
+2. Women have more chance to survive than men.
+3. Children have the most priority to survive. Younger people have more chance to survive than elder people.
+
+
+Limitations:
+1. The conclusion is just based on data of Titanic. To get good causation, it's better to have data of different disasters, that's also the future work to do.
+
+2. The sample data includes 891 passengers only, but there are overall 2224 people in titanic including passengers and the crew, so the conclusion might be different if all data is collected and information of the crew is included.
+
+3. The number of kids in the sample data especially of the 1st class is very small, there are only 2 infants and 2 kids in the 1st class, so the percentage of survived infants in the 1st class is only 50% may have bias. If more kids are included in the dataset, the percentage of survived kids in the 1st class might be increased to around 100%. 
+
+4. Records with missing value of age are dropped off when analysing percentage of survived people in different age groups. The 'Age' field could not be replaced with mean or any other value because it's one of the keys to classify the data. 
+
